@@ -1,0 +1,32 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{1EC2AAEE-14E1-4C17-95AB-2AA823871626}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{00A35B66-E429-40F1-83D0-08709DB3BEAB}"
+	ProjectSection(SolutionItems) = preProject
+		global.json = global.json
+	EndProjectSection
+EndProject
+Project("{8BB2217D-0F2D-49D1-97BC-3654ED321F3B}") = "Pixiv", "src\Pixiv\Pixiv.xproj", "{9FA2D158-347A-4641-8466-A3FEEF348263}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{9FA2D158-347A-4641-8466-A3FEEF348263}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9FA2D158-347A-4641-8466-A3FEEF348263}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9FA2D158-347A-4641-8466-A3FEEF348263}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9FA2D158-347A-4641-8466-A3FEEF348263}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{9FA2D158-347A-4641-8466-A3FEEF348263} = {1EC2AAEE-14E1-4C17-95AB-2AA823871626}
+	EndGlobalSection
+EndGlobal

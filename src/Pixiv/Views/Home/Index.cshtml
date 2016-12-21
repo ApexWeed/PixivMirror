@@ -1,0 +1,46 @@
+﻿@model Pixiv.Models.PixivImage
+
+@{
+    ViewData["Title"] = "Pixiv Downloader";
+}
+
+<form action="API/Fetch/" method="post">
+    <div class="form-horizontal">
+        <h4>Butts</h4>
+        <hr />
+        <div class="row">
+            <div class="col-sm-6">
+                <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+                <div class="form-group">
+                    <label asp-for="ID" class="col-md-2 control-label"></label>
+                    <div class="col-md-10">
+                        <input asp-for="ID" class="form-control" />
+                        <span asp-validation-for="ID" class="text-danger" />
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label asp-for="Index" class="col-md-2 control-label"></label>
+                    <div class="col-md-10">
+                        <input asp-for="Index" class="form-control" value="0" />
+                        <span asp-validation-for="Index" class="text-danger" />
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div class="col-md-offset-2 col-md-10">
+                        <input type="submit" value="Fetch" class="btn btn-default" />
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-6">
+                <textarea class="form-control" rows="5" id="bbcode"></textarea>
+                <input type="button" value="Generate BB" id="gibebb" class="btn btn-default" />
+            </div>
+        </div>
+    </div>
+     <div class="help-block">
+     </div>
+</form>
+
+@section Scripts {
+    @{ await Html.RenderPartialAsync("_ValidationScriptsPartial"); }
+}
